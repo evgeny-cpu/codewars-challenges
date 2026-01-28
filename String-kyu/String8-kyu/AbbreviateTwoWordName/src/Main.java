@@ -5,10 +5,7 @@ public class Main {
     }
 
     public static String abbrevName(String name) {
-        int start = name.indexOf(' ');
-        String firstName = name.substring(0,1);
-        String lastName = name.substring(start +1, start+2);
-        String result = firstName + "." + lastName;
-        return result.toUpperCase();
+        String [] names = name.split(" ");
+        return (names[0].charAt(0) + "." + names[1].charAt(0)).toUpperCase();
     }
 }
