@@ -6,9 +6,11 @@
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println(remove("22"));
+
     }
 
     public static String remove(String str) {
-        return str.length() < 2 ? " " : str.substring(1, str.length() - 1);
+        return str.substring(1, str.length() - 1);
     }
 }
