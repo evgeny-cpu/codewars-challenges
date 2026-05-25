@@ -28,9 +28,9 @@ public class Main {
         int left = 0;
         int right = n - 1;
         for (int i = n - 1; i >= 0; i--) {
-            if ((n - 1 - i) %2 ==0) {
+            if ((n - 1 - i) % 2 == 0) {
                 result[left++] = arr[i];
-            }else{
+            } else {
                 result[right--] = arr[i];
             }
         }

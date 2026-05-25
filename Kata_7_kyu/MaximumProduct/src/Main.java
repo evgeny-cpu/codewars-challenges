@@ -10,13 +10,10 @@ public class Main {
     }
 
     public static int adjacentElementsProduct(int[] array) {
-        if (array == null || array.length < 1) {
-            return 0;
-        }
-        int sum = array[0] * array[1];
+        int sum = Integer.MIN_VALUE;
         for (int i = 1; i < array.length - 1; i++) {
-            if (array[i] * array[i + 1] > sum){
-                sum = array[i] * array[i + 1];
+            if (array[i] * array[i + 1] > sum) {
+                sum = Math.max(sum, array[i] * array[i + 1]);
             }
         }
         return sum;

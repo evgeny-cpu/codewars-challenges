@@ -10,9 +10,8 @@ public class Main {
 
     }
     public static String solve(final String str) {
-        char [] c = str.toCharArray();
         int count = 0;
-        for (char letter : c){
+        for (char letter : str.toCharArray()){
             if (Character.isUpperCase(letter)){
                 count++;
             }
